@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+    <span><img [src]="hero.imageUrl" width="100px" height="100px"></span> <hr>
+    <span>{{hero.title}}</span> <hr>
+    <span>{{hero.price}}</span>
+    <button>show detail</button>
+  </li>
+  <angular-exam-hero-detail *ngIf="" (deleteItem)="cancel($event)" [hero]="selectedHero"></angular-exam-hero-detail>
+
+
+</ul>

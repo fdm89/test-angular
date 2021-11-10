@@ -1,0 +1,27 @@
+<div *ngIf="hero">
+  <h2>{{hero.title | uppercase}}</h2>
+
+  <div>
+    {{hero.imageUrl}}
+  </div>
+
+  <div>
+  <p>{{hero.exitYear}}</p>
+  <p>{{hero.productHeight}}</p>
+  <p>{{hero.productWeight}}</p>
+  <p>{{hero.itemProduced}}</p>
+  </div>
+
+  <div>
+    <h2>{{hero.price}}</h2>
+  </div>
+
+  <div>
+    {{hero.description}}
+  </div>
+
+  <div>
+    <button (click)="cancel(hero)">chiudi</button>
+  </div>
+
+</div>
